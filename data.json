@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "siteTitle": "Pham Tran Tan Phat — Data Engineer Portfolio",
+    "siteDescription": "Data Engineer & Data Analyst building ETL pipelines, data lakehouses, AI-powered manufacturing systems. Portfolio, projects, experience and contact.",
+    "siteUrl": "https://phamtrantanphat.pages.dev",
+    "ogImage": "/assets/og-cover.svg",
+    "themeColor": "#b91c1c",
+    "lang": "en"
+  },
+  "profile": {
+    "name": "Pham Tran Tan Phat",
+    "title": "Data Engineer / Data Analyst",
+    "tagline": "Building reliable data pipelines, data platforms and AI systems.",
+    "summary": "To apply practical experience in data processing and automation to a Data Engineer role. Short-term goal: contribute to building and optimizing efficient data pipelines. Long-term goal: become a Senior Data Engineer specializing in data architecture.",
+    "avatar": "/assets/avatar.svg",
+    "location": "Thu Duc City, Ho Chi Minh, Vietnam",
+    "email": "phamtranthienthien@gmail.com",
+    "phone": "0889336087",
+    "socials": [
+      { "name": "Facebook", "url": "https://www.facebook.com/tanphat221202/", "icon": "facebook" },
+      { "name": "Email",    "url": "mailto:phamtranthienthien@gmail.com",        "icon": "mail" }
+    ]
+  },
+  "education": [
+    {
+      "school": "University of Science — VNU-HCM (Đại học Khoa Học Tự Nhiên, ĐHQG TPHCM)",
+      "degree": "Bachelor — Data Science",
+      "period": "",
+      "details": "Highest degree level: Bachelor."
+    }
+  ],
+  "certificates": [
+    { "name": "B1 VSTEP (English)", "issuer": "Ministry of Education and Training, Vietnam", "year": "" }
+  ],
+  "languages": [
+    { "name": "Vietnamese", "level": "Native" },
+    { "name": "English", "level": "B1 VSTEP" }
+  ],
+  "skills": [
+    { "category": "Languages",        "items": ["Python", "JavaScript / Node.js", "SQL", "HTML / CSS"] },
+    { "category": "Data Engineering", "items": ["ETL Batch & Streaming", "Data Lakehouse", "Data Warehouse", "Crawling", "SQL Server"] },
+    { "category": "Platform & DevOps","items": ["Docker", "Kubernetes", "CI/CD", "Grafana"] },
+    { "category": "AI / ML",          "items": ["YOLOv8", "LLM (Llama 3.1)", "Fine-tuning", "Statistical / Trend Analysis"] },
+    { "category": "Industrial",       "items": ["Modbus TCP/IP", "PLC Integration", "Cyber-Physical Systems"] }
+  ],
+  "experience": [
+    {
+      "company": "Panasonic Electric Works Viet Nam",
+      "role": "Data Engineer / Foreman",
+      "period": "02/2025 — Present",
+      "location": "Vietnam",
+      "summary": "Designing and operating data systems for the manufacturing floor: real-time ETL from PLCs, dashboards, AI-driven quality control, and a full traceability platform."
+    },
+    {
+      "company": "Wisdom Engineering and Business Solutions",
+      "role": "Data Engineer",
+      "period": "12/2023 — 02/2025",
+      "location": "Vietnam",
+      "summary": "Full-time. Built ETL pipelines, Data Warehouse, Data Lake, Data Lakehouse, crawlers, Docker, Kubernetes, CI/CD. Led the team building the Data Lakehouse and a Modern Data Platform (ETL batch + streaming) with Data Visualization in Grafana."
+    }
+  ],
+  "projects": [
+    {
+      "name": "GembaBoard — Manufacturing Data Visualization System",
+      "company": "Panasonic Electric Works Viet Nam",
+      "role": "Sole Developer",
+      "duration": "4 months",
+      "tech": ["Python", "Node.js", "SQL Server", "YOLOv8"],
+      "summary": "Web-based system for real-time monitoring and historical analysis of production data, enabling immediate operational decisions and long-term improvement strategies.",
+      "highlights": [
+        "Engineered an ETL pipeline in Python to automatically extract raw operational data from machine PLCs.",
+        "Cleansing, transformation and normalization into SQL Server to ensure data integrity for in-depth analytics.",
+        "Built a responsive Node web app with dynamic dashboards (operation rate, output volume, trouble listings) plus Excel/chart export.",
+        "v2 AI upgrade: integrated a Cyber-Physical System (CCTV + YOLOv8) to detect operator procedural violations in real-time with automated alerts."
+      ]
+    },
+    {
+      "name": "Production AI Chatbot — Factory Operations Assistant",
+      "company": "Panasonic Electric Works Viet Nam",
+      "role": "Sole Developer",
+      "duration": "3 months",
+      "tech": ["Python", "Node.js", "Llama 3.1", "Fine-tuning"],
+      "summary": "In-house AI Chatbot serving as a virtual assistant for Production, HR and Maintenance — streamlines information access and operational support.",
+      "highlights": [
+        "Deployed Llama 3.1 and fine-tuned on proprietary SOPs, machine manuals, HR policies and historical production data.",
+        "Python backend handling core logic, sessions and LLM interaction.",
+        "Node chat UI with natural-language querying.",
+        "Use cases: order status & machine efficiency (Production), step-by-step troubleshooting (Maintenance), policy lookups (HR)."
+      ]
+    },
+    {
+      "name": "Gap–OC Test Machine Automation & Optimization",
+      "company": "Panasonic Electric Works Viet Nam",
+      "role": "Sole Developer",
+      "duration": "3 months",
+      "tech": ["Python", "Modbus TCP/IP", "Data Analysis"],
+      "summary": "Intelligent automation that optimizes the testing process between GAP and OC Test machines to maximize OK Rate.",
+      "highlights": [
+        "Python module over Modbus TCP/IP acquiring real-time parameters from the GAP machine's PLC.",
+        "Algorithm matching and synchronizing data per product as it moves from GAP to OC Test.",
+        "Statistical / trend analysis to correlate GAP inputs with final OC outcomes.",
+        "Closed-loop system: autonomously recommends optimized GAP PLC parameter adjustments."
+      ]
+    },
+    {
+      "name": "Data Traceability System — End-to-End Product Lifecycle Tracking",
+      "company": "Panasonic Electric Works Viet Nam",
+      "role": "Sole Developer",
+      "duration": "4 months",
+      "tech": ["Python", "Node.js (Express)", "SQL Server", "JavaScript"],
+      "summary": "Full-stack traceability platform capturing the complete production lifecycle of every unique product for QA, RCA and long-term compliance.",
+      "highlights": [
+        "Ingestion pipeline triggered by QR scans at multiple stations (T-S, OC Test). Warehoused in SQL Server with 4+ years retention (ISO compliance).",
+        "Node.js/Express web app with instant search-by-serial and step-by-step OK/NG/Rework history.",
+        "Strict compliance with data security protocols and Panasonic's internal ISM standards.",
+        "Built core Rework & Scrap modules (with image capture) plus analytics dashboards: real-time NG rates, rework volumes, scrap counts."
+      ]
+    }
+  ],
+  "contact": {
+    "headline": "Let's build something with data",
+    "subhead": "Open to Data Engineer roles, data platform consulting and AI-on-the-edge projects. Drop me a message."
+  },
+  "config": {
+    "emailjs": {
+      "publicKey": "",
+      "serviceId": "",
+      "templateId": ""
+    },
+    "drive": {
+      "fileId": "",
+      "apiKey": "",
+      "clientId": ""
+    }
+  }
+}

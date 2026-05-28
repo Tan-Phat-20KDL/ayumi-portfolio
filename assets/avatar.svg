@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fee2e2"/>
+      <stop offset="1" stop-color="#fca5a5"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cbd5e1"/>
+      <stop offset="1" stop-color="#94a3b8"/>
+    </linearGradient>
+  </defs>
+  <circle cx="160" cy="160" r="160" fill="url(#bg)"/>
+  <!-- body -->
+  <path d="M40 320 C 60 220 100 200 160 200 C 220 200 260 220 280 320 Z" fill="url(#shirt)"/>
+  <!-- neck -->
+  <rect x="140" y="170" width="40" height="40" rx="10" fill="#fcd5b5"/>
+  <!-- head -->
+  <circle cx="160" cy="135" r="58" fill="#fcd5b5"/>
+  <!-- hair -->
+  <path d="M100 130 C 100 80 130 65 160 65 C 195 65 220 85 220 130 C 220 110 200 96 178 92 C 165 100 145 100 130 95 C 116 100 105 115 100 130 Z" fill="#1f2937"/>
+  <!-- glasses -->
+  <circle cx="142" cy="138" r="14" fill="none" stroke="#1f2937" stroke-width="3"/>
+  <circle cx="178" cy="138" r="14" fill="none" stroke="#1f2937" stroke-width="3"/>
+  <line x1="156" y1="138" x2="164" y2="138" stroke="#1f2937" stroke-width="3"/>
+  <!-- mouth -->
+  <path d="M148 165 Q 160 172 172 165" stroke="#1f2937" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,6 @@
+# Hide dev / config files so they don't get served on the public site
+/README.md     /404.html  404
+/package.json  /404.html  404
+/wrangler.toml /404.html  404
+/.gitignore    /404.html  404
+/functions/*   /404.html  404

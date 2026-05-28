@@ -1,0 +1,14 @@
+{
+  "name": "phamtrantanphat-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal portfolio for Pham Tran Tan Phat — static site for Cloudflare Pages.",
+  "scripts": {
+    "dev":     "npx wrangler pages dev . --port 8788",
+    "deploy":  "npx wrangler pages deploy . --project-name=phamtrantanphat",
+    "serve":   "npx --yes serve . -l 8080"
+  },
+  "devDependencies": {
+    "wrangler": "^3.80.0"
+  }
+}

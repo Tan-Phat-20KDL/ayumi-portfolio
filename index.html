@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#b91c1c" />
+  <meta name="color-scheme" content="light dark" />
+
+  <title>Pham Tran Tan Phat — Data Engineer Portfolio</title>
+  <meta name="description" content="Data Engineer & Data Analyst building ETL pipelines, data lakehouses, AI-powered manufacturing systems. Portfolio, projects, experience and contact." />
+  <meta name="author" content="Pham Tran Tan Phat" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://phamtrantanphat.pages.dev/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Pham Tran Tan Phat — Data Engineer Portfolio" />
+  <meta property="og:description" content="ETL, data lakehouses, AI on the factory floor. See projects, experience and get in touch." />
+  <meta property="og:url" content="https://phamtrantanphat.pages.dev/" />
+  <meta property="og:image" content="/assets/og-cover.svg" />
+  <meta property="profile:first_name" content="Phat" />
+  <meta property="profile:last_name" content="Pham Tran Tan" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pham Tran Tan Phat — Data Engineer Portfolio" />
+  <meta name="twitter:description" content="ETL, data lakehouses, AI on the factory floor." />
+  <meta name="twitter:image" content="/assets/og-cover.svg" />
+
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="/assets/avatar.svg" />
+  <link rel="manifest" href="/manifest.json" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/styles.css?v=6" />
+
+  <script type="application/ld+json" id="ld-person">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pham Tran Tan Phat",
+    "jobTitle": "Data Engineer",
+    "url": "https://phamtrantanphat.pages.dev/",
+    "email": "mailto:phamtranthienthien@gmail.com",
+    "telephone": "+84-889-336-087",
+    "address": { "@type": "PostalAddress", "addressLocality": "Thu Duc City", "addressRegion": "Ho Chi Minh", "addressCountry": "VN" },
+    "sameAs": ["https://www.facebook.com/tanphat221202/"],
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Science, VNU-HCM" },
+    "knowsAbout": ["Data Engineering","ETL","Data Lakehouse","SQL Server","Python","Node.js","Docker","Kubernetes","LLM","YOLOv8","Modbus TCP/IP"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== Header / Nav ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <span class="brand__dot"></span>
+        <span data-bind="profile.name" class="brand__name">Pham Tran Tan Phat</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+
+      <!-- Auth: shows "Sign in" or user menu -->
+      <div id="auth" class="auth">
+        <button id="auth-signin" class="btn btn--primary btn--sm">
+          <svg width="16" height="16" viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.9 32.4 29.4 35.5 24 35.5c-6.4 0-11.5-5.1-11.5-11.5S17.6 12.5 24 12.5c2.9 0 5.6 1.1 7.7 2.9l5.7-5.7C33.9 6.5 29.2 4.5 24 4.5 13.2 4.5 4.5 13.2 4.5 24S13.2 43.5 24 43.5c10.8 0 19.5-8.7 19.5-19.5 0-1.2-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.6 16 18.9 12.5 24 12.5c2.9 0 5.6 1.1 7.7 2.9l5.7-5.7C33.9 6.5 29.2 4.5 24 4.5 16.5 4.5 10 8.7 6.3 14.7z"/><path fill="#4CAF50" d="M24 43.5c5.1 0 9.7-2 13.2-5.2l-6.1-5.2c-1.9 1.3-4.3 2.1-7.1 2.1-5.4 0-9.9-3.6-11.6-8.5l-6.6 5.1C9.8 39.2 16.3 43.5 24 43.5z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.4 4.3-4.4 5.6l6.1 5.2c-.4.4 6.5-4.8 6.5-14.8 0-1.2-.1-2.4-.4-3.5z"/></svg>
+          Sign in
+        </button>
+        <div id="auth-menu" class="auth-menu" hidden>
+          <button id="auth-userbtn" class="auth-userbtn" aria-haspopup="true">
+            <img id="auth-avatar" alt="" />
+            <span id="auth-email"></span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div id="auth-dropdown" class="auth-dropdown" hidden>
+            <div id="auth-status" class="auth-row muted small"></div>
+            <button id="edit-toggle" class="auth-row" type="button">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              <span>Edit mode</span>
+              <span id="edit-state" class="badge badge--soft">off</span>
+            </button>
+            <button id="seo-open" class="auth-row" type="button">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 21l-4.35-4.35"/><circle cx="11" cy="11" r="8"/></svg>
+              <span>SEO score</span>
+              <span id="seo-badge" class="badge badge--soft">—</span>
+            </button>
+            <button id="auth-settings" class="auth-row" type="button">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3h.2a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8v.2a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+              <span>Google API settings…</span>
+            </button>
+            <button id="auth-signout" class="auth-row" type="button">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg>
+              <span>Sign out</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Save indicator (only visible in edit mode) -->
+    <div id="save-bar" class="save-bar" hidden>
+      <span id="save-state">All changes saved</span>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section id="top" class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">Portfolio</p>
+          <h1>
+            <span data-bind="profile.name">Pham Tran Tan Phat</span>
+          </h1>
+          <p class="hero__title" data-bind="profile.title">Data Engineer / Data Analyst</p>
+          <p class="hero__tagline" data-bind="profile.tagline">Building reliable data pipelines, data platforms and AI systems.</p>
+          <p class="hero__summary" data-bind="profile.summary"></p>
+          <div class="hero__cta">
+            <a href="#contact" class="btn btn--primary">Contact me</a>
+            <a href="#projects" class="btn btn--ghost">View projects</a>
+          </div>
+          <ul class="hero__meta">
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-bind="profile.location"></span></li>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg><a data-bind-href="profile.email" data-href-prefix="mailto:" data-bind="profile.email"></a></li>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M22 16.92V21a1 1 0 0 1-1.11 1 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 3.18 4.11 1 1 0 0 1 4.18 3h4.09a1 1 0 0 1 1 .75c.12.96.36 1.9.7 2.79a1 1 0 0 1-.23 1L7.91 9.41a16 16 0 0 0 6 6l1.87-1.83a1 1 0 0 1 1-.23c.89.34 1.83.58 2.79.7a1 1 0 0 1 .75 1z"/></svg><a data-bind-href="profile.phone" data-href-prefix="tel:" data-bind="profile.phone"></a></li>
+          </ul>
+        </div>
+        <div class="hero__avatar" id="avatar-host">
+          <img data-bind-src="profile.avatar" alt="" id="avatar-img" />
+          <div class="hero__avatar__ring" aria-hidden="true"></div>
+          <div class="dropzone" hidden>
+            <div class="dropzone__inner">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M17 8l-5-5-5 5"/><path d="M12 3v12"/></svg>
+              <span>Drop image to change</span>
+            </div>
+            <input type="file" id="avatar-input" accept="image/*" hidden />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section__head">
+          <h2>About</h2>
+          <p class="section__sub">Who I am and what I work on.</p>
+        </header>
+        <div class="about">
+          <p data-bind="profile.summary"></p>
+          <div class="about__grid">
+            <div class="card">
+              <h3>Education</h3>
+              <ul class="list" data-list="education" data-tpl="education"></ul>
+            </div>
+            <div class="card">
+              <h3>Certificates</h3>
+              <ul class="list" data-list="certificates" data-tpl="certificates"></ul>
+              <h3 class="mt">Languages</h3>
+              <ul class="chips" data-list="languages" data-tpl="languages"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <header class="section__head">
+          <h2>Skills</h2>
+          <p class="section__sub">Tooling I reach for day-to-day.</p>
+        </header>
+        <div class="skills" data-list="skills" data-tpl="skills"></div>
+      </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <header class="section__head">
+          <h2>Experience</h2>
+          <p class="section__sub">Where I've been building.</p>
+        </header>
+        <ol class="timeline" data-list="experience" data-tpl="experience"></ol>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section id="projects" class="section section--alt">
+      <div class="container">
+        <header class="section__head">
+          <h2>Featured projects</h2>
+          <p class="section__sub">Selected work I'm proud of.</p>
+        </header>
+        <div class="projects" data-list="projects" data-tpl="projects"></div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <header class="section__head">
+          <h2 data-bind="contact.headline">Let's build something with data</h2>
+          <p class="section__sub" data-bind="contact.subhead"></p>
+        </header>
+        <div class="contact">
+          <form id="contact-form" class="contact__form" novalidate>
+            <label>
+              <span>Your name</span>
+              <input name="from_name" type="text" required autocomplete="name" />
+            </label>
+            <label>
+              <span>Your email</span>
+              <input name="reply_to" type="email" required autocomplete="email" />
+            </label>
+            <label>
+              <span>Subject</span>
+              <input name="subject" type="text" />
+            </label>
+            <label class="contact__msg">
+              <span>Message</span>
+              <textarea name="message" rows="6" required></textarea>
+            </label>
+            <button type="submit" class="btn btn--primary" id="contact-submit">Send message</button>
+            <p class="form-status" id="contact-status" role="status" aria-live="polite"></p>
+          </form>
+          <aside class="contact__card">
+            <h3>Reach me directly</h3>
+            <ul class="list">
+              <li><strong>Email</strong><br><a data-bind-href="profile.email" data-href-prefix="mailto:" data-bind="profile.email"></a></li>
+              <li><strong>Phone</strong><br><a data-bind-href="profile.phone" data-href-prefix="tel:" data-bind="profile.phone"></a></li>
+              <li><strong>Location</strong><br><span data-bind="profile.location"></span></li>
+            </ul>
+            <div class="socials" data-list="profile.socials" data-tpl="socials"></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> <span data-bind="profile.name"></span>. Built on Cloudflare Pages.</p>
+    </div>
+  </footer>
+
+  <!-- ===== Templates ===== -->
+  <template id="tpl-education">
+    <li class="li">
+      <div class="li__top"><strong data-f="school"></strong><span class="muted" data-f="period"></span></div>
+      <div data-f="degree"></div>
+      <div class="muted small" data-f="details"></div>
+    </li>
+  </template>
+  <template id="tpl-certificates">
+    <li class="li">
+      <strong data-f="name"></strong>
+      <span class="muted small" data-f="issuer"></span>
+      <span class="muted small" data-f="year"></span>
+    </li>
+  </template>
+  <template id="tpl-languages">
+    <li class="chip"><span data-f="name"></span> · <span class="muted" data-f="level"></span></li>
+  </template>
+  <template id="tpl-skills">
+    <div class="skill-group">
+      <h3 data-f="category"></h3>
+      <ul class="chips" data-sub="items" data-sub-tpl="chip"></ul>
+    </div>
+  </template>
+  <template id="tpl-chip">
+    <li class="chip"><span class="chip__text" data-f="."></span></li>
+  </template>
+  <template id="tpl-experience">
+    <li class="t-item">
+      <div class="t-dot" aria-hidden="true"></div>
+      <div class="t-card">
+        <div class="t-card__head">
+          <h3 data-f="role"></h3>
+          <span class="badge" data-f="period"></span>
+        </div>
+        <div class="t-card__co"><strong data-f="company"></strong> · <span class="muted" data-f="location"></span></div>
+        <p data-f="summary"></p>
+      </div>
+    </li>
+  </template>
+  <template id="tpl-projects">
+    <article class="proj">
+      <button type="button" class="proj__head" aria-expanded="false">
+        <div class="proj__head__main">
+          <h3 data-f="name"></h3>
+          <p class="proj__preview" data-f="summary"></p>
+          <div class="proj__meta">
+            <span class="proj__co"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-2"/></svg><span data-f="company"></span></span>
+            <span class="proj__role muted"><span data-f="role"></span></span>
+            <span class="badge" data-f="duration"></span>
+          </div>
+        </div>
+        <span class="proj__chev" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </span>
+      </button>
+      <div class="proj__body" hidden>
+        <div class="proj__details rich-target" data-html="body"></div>
+        <div class="proj__tech-label">Tech stack</div>
+        <ul class="chips chips--mono" data-sub="tech" data-sub-tpl="chip"></ul>
+      </div>
+    </article>
+  </template>
+  <template id="tpl-bullet">
+    <li><span class="bullet__text" data-f="."></span></li>
+  </template>
+  <template id="tpl-socials">
+    <a class="social" data-bind-href-attr="url" data-f="name" target="_blank" rel="noopener"></a>
+  </template>
+
+  <!-- ===== Sign-in modal (admin password) ===== -->
+  <div id="setup-modal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="setup-title">
+    <div class="modal__backdrop" data-modal-close></div>
+    <div class="modal__panel">
+      <button class="modal__x" data-modal-close aria-label="Close">×</button>
+      <h2 id="setup-title">Sign in</h2>
+      <p class="muted">Enter the admin password you configured in Cloudflare Pages (env var <code>ADMIN_PASSWORD</code>).</p>
+      <div class="modal__form">
+        <label>
+          <span>Admin password</span>
+          <input id="cfg-password" type="password" autocomplete="current-password" placeholder="Your admin password" />
+        </label>
+        <p id="setup-error" class="form-status err"></p>
+      </div>
+      <div class="modal__actions">
+        <button class="btn btn--ghost" data-modal-close type="button">Cancel</button>
+        <button class="btn btn--primary" id="cfg-save" type="button">Sign in</button>
+      </div>
+      <details class="modal__note">
+        <summary class="muted small">First-time setup (~3 minutes)</summary>
+        <ol class="modal__steps">
+          <li>Cloudflare Dashboard → your Pages project → <strong>Settings → Functions</strong>.</li>
+          <li><strong>KV namespace bindings → Add binding</strong>:
+            <ul>
+              <li>Variable name: <code>PORTFOLIO_KV</code></li>
+              <li>KV namespace: click <strong>Create new</strong> → name it <code>portfolio-data</code> → Save</li>
+            </ul>
+          </li>
+          <li><strong>Environment variables → Add variable</strong>:
+            <ul>
+              <li>Variable name: <code>ADMIN_PASSWORD</code></li>
+              <li>Value: pick a strong password (24+ random chars recommended)</li>
+              <li>Save</li>
+            </ul>
+          </li>
+          <li>Go to <strong>Deployments</strong> tab → click the latest deployment menu → <strong>Retry deployment</strong> so it picks up the bindings.</li>
+          <li>Refresh this page → click Sign in → paste the password above.</li>
+        </ol>
+      </details>
+    </div>
+  </div>
+
+  <!-- SEO Score modal -->
+  <div id="seo-modal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="seo-title">
+    <div class="modal__backdrop" data-modal-close></div>
+    <div class="modal__panel">
+      <button class="modal__x" data-modal-close aria-label="Close">×</button>
+      <h2 id="seo-title">SEO Score</h2>
+      <div class="seo-score">
+        <div class="seo-score__ring">
+          <svg viewBox="0 0 100 100" width="120" height="120">
+            <circle cx="50" cy="50" r="44" fill="none" stroke="var(--border)" stroke-width="8" />
+            <circle id="seo-ring" cx="50" cy="50" r="44" fill="none" stroke="var(--accent)" stroke-width="8"
+                    stroke-dasharray="276.46" stroke-dashoffset="276.46"
+                    stroke-linecap="round" transform="rotate(-90 50 50)" />
+          </svg>
+          <div class="seo-score__num"><span id="seo-num">0</span><small>/100</small></div>
+        </div>
+        <div class="seo-score__meta">
+          <p id="seo-label" class="seo-label">—</p>
+          <p class="muted small">Higher score = better Google rankings &amp; richer share previews.</p>
+        </div>
+      </div>
+      <h3 class="mt">Checks</h3>
+      <ul id="seo-checks" class="seo-checks"></ul>
+      <h3 class="mt">Quick fixes</h3>
+      <ul id="seo-tips" class="seo-tips muted small"></ul>
+      <div class="modal__actions">
+        <button class="btn btn--ghost" data-modal-close type="button">Close</button>
+        <button class="btn btn--primary" id="seo-refresh" type="button">Recalculate</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" hidden role="status" aria-live="polite"></div>
+
+  <!-- App scripts (bump ?v= when you redeploy to bust browser cache) -->
+  <script src="/app.js?v=6" defer></script>
+  <script src="/email.js?v=6" defer></script>
+  <script src="/auth.js?v=6" defer></script>
+  <script src="/editor.js?v=6" defer></script>
+</body>
+</html>

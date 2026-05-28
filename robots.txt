@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /?edit=
+Sitemap: https://phamtrantanphat.pages.dev/sitemap.xml

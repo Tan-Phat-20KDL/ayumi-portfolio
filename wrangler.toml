@@ -1,0 +1,4 @@
+# Cloudflare Pages config for `wrangler pages deploy`
+name = "phamtrantanphat"
+pages_build_output_dir = "."
+compatibility_date = "2025-01-01"

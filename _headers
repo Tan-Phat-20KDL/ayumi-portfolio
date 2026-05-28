@@ -1,0 +1,32 @@
+# Cloudflare Pages headers
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+
+# HTML / JSON / scripts: always refetch so updates land immediately
+/
+  Cache-Control: no-cache, must-revalidate
+/index.html
+  Cache-Control: no-cache, must-revalidate
+/data.json
+  Cache-Control: no-store
+/app.js
+  Cache-Control: no-cache, must-revalidate
+/editor.js
+  Cache-Control: no-cache, must-revalidate
+/auth.js
+  Cache-Control: no-cache, must-revalidate
+/email.js
+  Cache-Control: no-cache, must-revalidate
+/styles.css
+  Cache-Control: no-cache, must-revalidate
+
+# API responses must never cache
+/api/*
+  Cache-Control: no-store
+
+# Static images can cache for a day
+/assets/*
+  Cache-Control: public, max-age=86400
